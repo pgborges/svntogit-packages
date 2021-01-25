@@ -25,6 +25,7 @@ build() {
   cmake -B build -S $pkgname-$pkgver \
     -DCMAKE_INSTALL_LIBEXECDIR=lib \
     -DBUILD_TESTING=OFF
+    -DHAVE_DDCUTIL=On
   cmake --build build
 }
 
